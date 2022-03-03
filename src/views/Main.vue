@@ -32,11 +32,16 @@
           fit="fit"></el-image>
         </el-col>
         <el-col :span="18" :xs="24">
-          <div style="">
-          我们利用最新的嵌入式芯片，将其植入牲畜的体内<p/>
-          通过内部监测，更准确地实时反馈牲畜的状态信息<p/>
-          养殖户可以通过我们提供的数据后台网站，实时查看相关数据
-          </div>
+          <el-collapse v-model="activeNames" @change="handleChange">
+            <el-collapse-item title="养" name="1">
+            <div style="">
+              我们利用最新的嵌入式芯片，将其植入牲畜的体内<p/>
+              通过内部监测，更准确地实时反馈牲畜的状态信息<p/>
+              养殖户可以通过我们提供的数据后台网站，实时查看相关数据
+            </div>
+            </el-collapse-item>
+          </el-collapse>
+          
           </el-col>
       </el-row>
     </el-card>
@@ -50,10 +55,15 @@
           fit="fit"></el-image>
         </el-col>
         <el-col :span="18" :xs="24">
-          <div>
+           <el-collapse v-model="activeNames" @change="handleChange">
+            <el-collapse-item title="售" name="1">
+            <div>
             在线的B2C销售网站，只针对渔农类的特化销售平台<p/>
             帮助养殖户与种植户更快的兜售
-          </div>
+            </div>
+            </el-collapse-item>
+          </el-collapse>
+          
           </el-col>
       </el-row>
     </el-card>
@@ -67,10 +77,15 @@
           fit="fit"></el-image>
         </el-col>
         <el-col :span="18" :xs="24">
-          <div>
-            通过与物流公司合作，我们为一些难以保存的产品提供了 <b>冷链运输</b> 服务<p/>
-            达到 快装快运、轻装轻卸、防热防冻、平稳运输
-          </div>
+          <el-collapse v-model="activeNames" @change="handleChange">
+            <el-collapse-item title="运" name="1">
+            <div>
+              通过使用传感器、RFID、定位等仪器与技术<p/>
+              使物品在运输途中一直处于低温环境，从而保证物品质量，降低运输过程中货物的损耗<p/>
+              同时结合区块链技术对运输各环节进行信息数据全面覆盖，保证冷链物流各环节紧密联系，提升运输效率
+            </div>
+            </el-collapse-item>
+          </el-collapse>
         </el-col>
       </el-row>
     </el-card>
@@ -84,11 +99,16 @@
           fit="fit"></el-image>
         </el-col>
         <el-col :span="18" :xs="24">
-          <div>
+          <el-collapse v-model="activeNames" @change="handleChange">
+            <el-collapse-item title="查" name="1">
+            <div>
             提供从出生到被消费的完整 <b>溯源</b> 服务<p/>
             包括每日的生长情况，所属的科室，养殖的地点，运输的路线<p/>
             使消费者更放心的购买，增加回购量
           </div>
+            </el-collapse-item>
+          </el-collapse>
+          
         </el-col>
       </el-row>
     </el-card>
