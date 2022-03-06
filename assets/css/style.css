@@ -1339,3 +1339,23 @@ section {
 #footer .credits a {
   color: #9eccf4;
 }
+
+/* addition */
+.mb-base {
+  margin-bottom: 20px !important;
+}
+.mb-lg {
+  margin-bottom: 30px !important;
+}
+.bold {
+  font-weight: bold;
+}
+
+.col4-item {
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+.text-common {
+  color: #666666 !important;
+}
