@@ -532,7 +532,7 @@ section {
 
 .about .section-title p {
   text-align: left;
-  font-style: italic;
+  /* font-style: italic; */
   color: #666;
 }
 
